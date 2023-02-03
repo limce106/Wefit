@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recommend.Instructure_Recommend_Fragment">
+
+    <FrameLayout
+        android:id="@+id/fragment_input_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/edtNickName"
+        android:layout_width="277dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="회원 ID를 입력하세요."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btnNicknameOk"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNicknameOk"
+        android:layout_width="117dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:text="확인"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtNickName"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="117dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="69dp"
+        android:text="커스텀
+            운동 추가"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCustom"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCustom"
+        android:layout_width="277dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/wefitfont"
+        android:text="찾으시는 운동이 없다면 추가해보세요!"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCustom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_exerciseName"
+        android:layout_width="0dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="32dp"
+        android:paddingTop="8dp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustom"
+        tools:listitem="@layout/exercise_name_form" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

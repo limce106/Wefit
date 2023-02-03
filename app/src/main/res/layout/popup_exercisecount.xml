@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtExerciseDate"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="20230101"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_set"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:hint="세트를 입력하세요. "
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtExerciseDate" />
+
+    <EditText
+        android:id="@+id/edt_count"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:hint="횟수를 입력하세요. "
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_set" />
+
+    <Button
+        android:id="@+id/btnCancel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="취소"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_count" />
+
+    <Button
+        android:id="@+id/btnOk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="확인"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="70dp"
+    android:orientation="vertical"
+    tools:context=".myPage" >
+
+
+
+    <TextView
+        android:id="@+id/page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textSize="20dp"
+        android:fontFamily="@font/wefitfont"
+        android:layout_marginBottom="15dp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <TextView
+        android:id="@+id/page_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="20dp"
+        android:fontFamily="@font/wefitfont"
+        android:layout_marginBottom="15dp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+
+
+    <TextView
+        android:id="@+id/page_pn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        android:textSize="20dp"
+        android:fontFamily="@font/wefitfont"
+        android:layout_marginBottom="15dp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <TextView
+        android:id="@+id/page_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별"
+        android:textSize="20dp"
+        android:fontFamily="@font/wefitfont"
+        android:layout_marginBottom="15dp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <TextView
+        android:id="@+id/page_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="강사/회원"
+        android:textSize="20dp"
+        android:fontFamily="@font/wefitfont"
+        android:layout_marginBottom="15dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <TextView
+        android:id="@+id/page_purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동 목적"
+        android:textSize="20dp"
+        android:fontFamily="@font/wefitfont"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+</LinearLayout>

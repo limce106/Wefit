@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/logo_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/wefitfont"
+        android:paddingStart="15dp"/>
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="ID (이메일 형식으로 입력하시오)"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/wefitfont"
+        android:paddingStart="15dp"/>
+
+
+    <EditText
+        android:id="@+id/edtPW"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="PW / 6자 이상으로 입력하세요"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/wefitfont"
+        android:paddingStart="15dp"/>
+
+
+
+    <EditText
+        android:id="@+id/re_PW"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtPW"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Confirm PW"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/wefitfont"
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/edtTEL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/re_PW"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="PhoneNumber"
+        android:inputType="number"
+        android:fontFamily="@font/wefitfont"
+        android:paddingStart="15dp" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTEL"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="성별"
+        android:textSize="18sp"
+        android:fontFamily="@font/wefitfont"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rb_gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTEL"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/wefitfont"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wefitfont"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/wefitfont"
+            android:text="Femle" />
+    </RadioGroup>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_finish_reg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rb_gender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="JOIN"
+        android:fontFamily="@font/wefitfont"
+        android:paddingStart="15dp" />
+
+
+</RelativeLayout>

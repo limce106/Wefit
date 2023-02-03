@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtExerciseDate2"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="20230101"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_custom_exercise_name"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:hint="운동을 입력하세요. "
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtExerciseDate2" />
+
+    <EditText
+        android:id="@+id/edt_custom_set"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:hint="세트를 입력하세요. "
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_custom_exercise_name" />
+
+    <EditText
+        android:id="@+id/edt_custom_count"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:hint="횟수를 입력하세요. "
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_custom_set" />
+
+    <Button
+        android:id="@+id/custom_btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="취소"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toStartOf="@+id/custom_btnOk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_custom_count" />
+
+    <Button
+        android:id="@+id/custom_btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="확인"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_custom_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

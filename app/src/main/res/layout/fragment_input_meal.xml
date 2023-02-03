@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".Records.InputMealFragment"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-66dp">
+
+    <EditText
+        android:id="@+id/edtMealDate"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="20230101"
+        app:layout_constraintBottom_toTopOf="@+id/edtTimeSlot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <TimePicker
+        android:id="@+id/tp_Choice_eatTime"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/tv_eatTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_eatTime"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:hint="식사 시간이 표시됩니다!"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtMealName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtMealName"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="식단"
+        app:layout_constraintBottom_toTopOf="@+id/edtEatAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtEatAmount"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="식사 양(kcal 또는 몇 그릇)"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveMealrecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveMealrecord"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="75dp"
+        android:text="저장하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTimeSlot"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="아침/점심/저녁/간식"
+        app:layout_constraintBottom_toTopOf="@+id/tp_Choice_eatTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

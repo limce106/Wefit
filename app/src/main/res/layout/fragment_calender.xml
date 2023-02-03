@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".calender_user.Calender">
+
+
+    <TextView
+        android:id="@+id/text_indi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:text="개인 운동"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintTop_toTopOf="@id/btn_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="수업 예약"
+        android:paddingLeft="0dp"
+        android:src="@drawable/ic_calender_class"
+        android:visibility="invisible"
+        app:backgroundTint="#FFFFFF"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add"
+        app:layout_constraintEnd_toEndOf="@id/btn_add"
+        app:layout_constraintStart_toStartOf="@id/btn_add"
+        app:layout_constraintTop_toTopOf="@id/btn_add"
+        app:maxImageSize="54dp"
+        app:tint="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="467dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:contentDescription="추가하기"
+        android:src="@drawable/ic_add_calender_before"
+        android:visibility="visible"
+        app:backgroundTint="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="70.5dp"
+        app:tint="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_indi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="개인 운동"
+        android:paddingLeft="10dp"
+        android:src="@drawable/ic_calender_individual"
+        android:visibility="invisible"
+        app:backgroundTint="#FFFFFF"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add"
+        app:layout_constraintEnd_toEndOf="@id/btn_add"
+        app:layout_constraintStart_toStartOf="@id/btn_add"
+        app:layout_constraintTop_toTopOf="@id/btn_add"
+        app:maxImageSize="53dp"
+        app:tint="@null" />
+
+    <TextView
+        android:id="@+id/text_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="35dp"
+        android:text="수업 예약"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/wefitfont"
+        app:layout_constraintTop_toTopOf="@id/btn_add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CalendarView
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_calender"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/calender_item" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

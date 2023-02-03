@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wefitfont"
+            android:text="반갑습니다!" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="어떤 회원으로 가입할까요?"
+            android:layout_marginBottom="50dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/wefitfont"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            android:drawableLeft="@drawable/ic_member"
+            android:text="피트니스 회원             >"
+            android:fontFamily="@font/wefitfont"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btn_trainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#00ff0000"
+            android:drawableLeft="@drawable/ic_trainer"
+            android:fontFamily="@font/wefitfont"
+            android:text="피트니스 강사             >"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_goLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/wefitfont"
+        android:text="이미 계정이 있나요? > 로그인" />
+
+
+</LinearLayout>
+
+
+
